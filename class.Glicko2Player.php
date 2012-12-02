@@ -4,6 +4,8 @@
 
 Corrected implementation of Glicko2
 
+License: LGPLv3
+
 Modified by Guangcong Luo on 2012 Sept 28
 <guangcongluo@gmail.com>
 

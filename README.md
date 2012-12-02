@@ -45,3 +45,10 @@ Add wins, losses, and draws to a player:
 	$Alice->Update();
 	$Bob->Update();
 	$Charlie->Update();
+
+License
+-------
+
+[GNU LGPL version 3.0][3]
+
+ [3]: http://www.gnu.org/copyleft/lesser.html
