@@ -130,7 +130,7 @@ class Glicko2Player {
 		// Follow along the steps using: http://www.glicko.net/glicko/glicko2.pdf
 
 		if (count($M) == 0) {
-			$phi_p = sqrt( ( $this->phi * $this->phi ) + ( $this->sigma + $this->sigma ) );
+			$phi_p = sqrt( ( $this->phi * $this->phi ) + ( $this->sigma * $this->sigma ) );
 			return array( 'r' => $this->rating, 'RD' => 173.7178 * $phi_p, 'mu' => $this->mu, 'phi' => $phi_p, 'sigma' => $this->sigma ) ;
 		}
 
