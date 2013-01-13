@@ -32,6 +32,7 @@ Add wins, losses, and draws to a player:
 	$Alice = new Glicko2Player();
 	$Bob = new Glicko2Player();
 	$Charlie = new Glicko2Player();
+	$David = new Glicko2Player();
 
 	$Alice->AddWin($Bob);
 	$Alice->AddWin($Charlie)
@@ -45,6 +46,7 @@ Add wins, losses, and draws to a player:
 	$Alice->Update();
 	$Bob->Update();
 	$Charlie->Update();
+	$David->Update(); // David did not participate, but must be updated
 
 License
 -------

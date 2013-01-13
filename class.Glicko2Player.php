@@ -33,22 +33,24 @@ Updating a Glicko2Player
 
 Add wins, losses, and draws to a player:
 
-$Alice = new Glicko2Player();
-$Bob = new Glicko2Player();
-$Charlie = new Glicko2Player();
+	$Alice = new Glicko2Player();
+	$Bob = new Glicko2Player();
+	$Charlie = new Glicko2Player();
+	$David = new Glicko2Player();
 
-$Alice->AddWin($Bob);
-$Alice->AddWin($Charlie)
+	$Alice->AddWin($Bob);
+	$Alice->AddWin($Charlie)
 
-$Bob->AddLoss($Alice);
-$Bob->AddWin($Charlie);
+	$Bob->AddLoss($Alice);
+	$Bob->AddWin($Charlie);
 
-$Charlie->AddLoss($Alice);
-$Charlie->AddLoss($Bob);
+	$Charlie->AddLoss($Alice);
+	$Charlie->AddLoss($Bob);
 
-$Alice->Update();
-$Bob->Update();
-$Charlie->Update();
+	$Alice->Update();
+	$Bob->Update();
+	$Charlie->Update();
+	$David->Update(); // David did not participate, but must be updated
 
 This message and the following may not be removed or modified:
 
